@@ -5,21 +5,21 @@
 class Upool < Formula
   desc "Pool of pre-warmed Unity worktrees leased to coding agents"
   homepage "https://github.com/weslo/upool"
-  version "0.4.0-rc.5"
+  version "0.4.0"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/weslo/upool/releases/download/v0.4.0-rc.5/upool_0.4.0-rc.5_darwin_amd64.tar.gz"
-    sha256 "e4993adea24653a92f912b48e7e37f3856673aa0526c065c7027cc49c2d51b3d"
+    url "https://github.com/weslo/upool/releases/download/v0.4.0/upool_0.4.0_darwin_amd64.tar.gz"
+    sha256 "8a134c49cb4317bd2d0314ce3681aafa3a4ebdb5f528deab95a09b20ef6317e9"
 
     define_method(:install) do
       bin.install "upool"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/weslo/upool/releases/download/v0.4.0-rc.5/upool_0.4.0-rc.5_darwin_arm64.tar.gz"
-    sha256 "db1ded9de20dac82fe73d47ef635b75cd4f75963012b2d061de86e36230d80f3"
+    url "https://github.com/weslo/upool/releases/download/v0.4.0/upool_0.4.0_darwin_arm64.tar.gz"
+    sha256 "57778ef137d750886f5c13ea2c306d3279594a63d0c423bcd4e7cb4aaf47d4a2"
 
     define_method(:install) do
       bin.install "upool"
